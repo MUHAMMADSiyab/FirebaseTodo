@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Signup</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css" />
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {} // Your Firebase config object goes here..
+    firebase.initializeApp(config);
+    </script>
+    <style>label {font-size: 80%}</style>
+</head>
+<body>
+    <div class="container" style="margin-top: 30px">
+        <div class="row justify-content-sm-center">
+            <div class="col-sm-5">
+                <h3>Signup</h3>
+                <hr>
+                <form id="signupForm">
+                    <div class="form-group">
+                        <label for="email"><b>Email:</b></label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" />
+                    </div>
+                    <div class="form-group">
+                        <label for="pass"><b>Password:</b></label>
+                        <input type="password" class="form-control" id="pass" placeholder="Enter password" />
+                    </div>
+                    <div class="form-group">
+                        <label for="pass-repeat"><b>Password repeat:</b></label>
+                        <input type="password" class="form-control" id="pass-repeat" placeholder="Re-enter password" />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="SIGNUP" class="btn btn-success" />
+                    </div>
+                </form>
+                <div id="response"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/signup.js"></script>
+    <script src="./js/showMessage.js"></script>
+</body>
+</html>
